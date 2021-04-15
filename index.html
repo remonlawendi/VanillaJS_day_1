@@ -26,5 +26,25 @@
         </div>
        
     </div>
+    <script>
+    // Select The HTML Element Collection 
+const panel = document.querySelectorAll('.panel')
+console.log(panel);
+        // Iterate Over HTML Collection To control Each element
+        panel.forEach((panel) => {
+           // Add EventListner To Each Element
+            panel.addEventListener('click', ()=> {
+                removeActiveClass()
+                panel.classList.add('active')
+            })
+    
+        })
+        // seperated Function work as A class Checker 
+        function removeActiveClass(){
+            panel.forEach((panel)=> {
+                panel.classList.remove('active')
+            })
+        }
+    </script>
 </body>
 </html>
