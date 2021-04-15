@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+.container {
+    display: flex;
+    width: 90vw;
+}
+.panel {
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    flex:0.5;
+    margin: 10px ;
+    position: relative;
+    transition: flex 0.7s ease-in;
+    -webkit-transition: flex 0.7s ease-in;
+    -moz-transition: flex 0.7s ease-in;
+    -ms-transition: flex 0.7s ease-in;
+    -o-transition: flex 0.7s ease-in;
+}
+.panel h3 {
+    font-size: 24px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+.panel.active {
+    flex: 5;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+.first{
+    background-image: url("/img/panel-1.jpg"); 
+}
+.second{
+    background-image: url("/img/panel-2.jpg"); 
+}
+.third{
+    background-image: url("/img/panel-3.jpg"); 
+}
+.fourth{
+    background-image: url("/img/panel-4.jpg"); 
+}
+.fifth{
+    background-image: url("/img/panel-5.jpg"); 
+}
